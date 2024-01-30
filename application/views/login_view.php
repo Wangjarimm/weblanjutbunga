@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sistem Informasi Klinik Sukajadi</title>
+  <title>Sistem Informasi Klinik</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,26 +30,32 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo base_url()?>assets/index2.html"><b>Digital</b>Klinik</a>
+    <a href="<?php echo base_url()?>assets/index2.html"><b>Digital</b>Clinic</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Silahkan Login Terlebih Dahulu</p>
+    <?php $pesan = $this->session->flashdata('pesan');?>
+      <?php if (isset($pesan)):?>
+      <div class="alert alert-danger">
+        <strong>Login Salah!</strong> Username atau Password Anda salah!.
+      </div>
+      <?php endif?> 
 
-    <form action="<?php echo base_url()?>assets/index2.html" method="post">
+    <form action="<?php echo site_url()?>/Login/validasi" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="text" class="form-control" placeholder="Username" name="username">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" placeholder="Password" name="password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Ingatkan Saya
+              <input type="checkbox"> Ingatkan saya
             </label>
           </div>
         </div>
@@ -60,6 +66,7 @@
         <!-- /.col -->
       </div>
     </form>
+
   </div>
   <!-- /.login-box-body -->
 </div>
