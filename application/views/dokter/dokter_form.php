@@ -13,11 +13,11 @@
         <h2 style="margin-top:0px">Dokter <?php echo $button ?></h2>
         <form action="<?php echo $action; ?>" method="post">
 	    <div class="form-group">
-            <label for="varchar">nama <?php echo form_error('nama') ?></label>
+            <label for="varchar">Nama <?php echo form_error('nama') ?></label>
             <input type="text" class="form-control" name="nama" id="nama" placeholder="nama" value="<?php echo $nama; ?>" />
         </div>
 	    <div class="form-group">
-            <label for="varchar">spesialis <?php echo form_error('spesialis') ?></label>
+            <label for="varchar">Spesialis <?php echo form_error('spesialis') ?></label>
             <input type="text" class="form-control" name="spesialis" id="spesialis" placeholder="spesialis" value="<?php echo $spesialis; ?>" />
         </div>
 	    <input type="hidden" name="id" value="<?php echo $id; ?>" /> 

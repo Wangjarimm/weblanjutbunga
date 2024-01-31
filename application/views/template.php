@@ -44,7 +44,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="<?php echo site_url()?>/dashboard" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>D</b>Lib</span>
       <!-- logo for regular state and mobile devices -->
@@ -63,16 +63,16 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <img src="<?php echo base_url()?>assets/dist/img/userbunga.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Bunga Rizka Fadillah</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url()?>assets/dist/img/userbunga.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  Bunga Rizka Fadillah - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -102,10 +102,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="<?php echo base_url()?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo base_url()?>assets/dist/img/userbunga.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Bunga Rizka Fadillah</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -124,7 +124,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
-          <a href="<?php echo site_url()?>/dashboard">
+          <a href="<?php echo site_url()?>/Dashboard">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
