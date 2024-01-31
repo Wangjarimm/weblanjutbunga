@@ -14,7 +14,7 @@ class User extends CI_Controller
 
     public function index()
     {
-        $q = urldecode($this->input->get('q', TRUE));
+        @$q = urldecode($this->input->get('q', TRUE));
         $start = intval($this->input->get('start'));
         
         if ($q <> '') {
